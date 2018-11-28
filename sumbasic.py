@@ -71,7 +71,13 @@ def sumbasic(article_obj, stepone, steptwo, stepthree, stepfour):
 
     return summary_indices
 
-def main(method, docpaths):
+def main(method, docpath):
+
+    if '*' in docpath:
+        docbase = os.path.basename(docpath)
+        docpaths = [d for d in os.listdir(ARTICLES_DIR) if d.split('-')[0] == docbase]
+    else:
+        docpaths = [docpath]
 
     article = ""
     for docpath in docpaths:
@@ -103,6 +109,6 @@ if __name__ == '__main__':
         sys.exit(1)
 
     method = sys.argv[1]
-    docpaths = sys.argv[2:]
+    docpath = sys.argv[2]
 
-    main(method, docpaths)
+    main(method, docpath)
