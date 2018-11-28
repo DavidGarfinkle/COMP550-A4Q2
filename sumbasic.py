@@ -13,8 +13,6 @@ from collections import Counter
 from preprocess import preprocess_article
 from config import *
 
-WORDS_TO_SENTENCES = {}
-
 def stepone(article_obj):
     words = [w for lst in article_obj['words'] for w in lst]
     word_counts = Counter(words)
@@ -39,15 +37,26 @@ def stepthree(article_obj, word_probabilities, sentence_weights):
 
     return best_sentence_index
 
+def stepthree_bestavg(article_obj, word_probabilities, sentence_weights):
+    return max(sentence_weights, key = lambda s_index: sentence_weights[s_index])
 
 def stepfour(article_obj, word_probabilities, s_index):
     for word in article_obj['words'][s_index]:
         word_probabilities[word] *= word_probabilities[word]
 
+def stepfour_simplified(article_obj, word_probabilities, s_index):
+    return
+
 def get_summary(article_obj, summary_indices):
     return ". ".join(article_obj['sentences'][s_index] for s_index in summary_indices)
 
-def orig(article_obj):
+def leading(article_obj):
+    summary_indices = 0
+    while len(get_summary(article_obj, range(summary_indices)).split(' ')) < 100:
+        summary_indices += 1
+    return range(summary_indices)
+
+def sumbasic(article_obj, stepone, steptwo, stepthree, stepfour):
 
     word_probabilities = stepone(article_obj)
     summary_indices = []
@@ -62,14 +71,26 @@ def orig(article_obj):
 
     return summary_indices
 
-def main(docpath):
+def main(method, docpaths):
 
-    with open(docpath, 'r') as f:
-        article = f.read()
+    article = ""
+    for docpath in docpaths:
+        with open(docpath, 'r') as f:
+            article = f.read()
+        article += article
 
     article_obj = preprocess_article(article)
 
-    summary_indices = orig(article_obj)
+    if method == "orig":
+        summary_indices = sumbasic(article_obj, stepone, steptwo, stepthree, stepfour)
+    elif method == "best-avg":
+        summary_indices = sumbasic(article_obj, stepone, steptwo, stepthree_bestavg, stepfour)
+    elif method == "simplified":
+        summary_indices = sumbasic(article_obj, stepone, steptwo, stepthree, stepfour)
+    elif method == "leading":
+        summary_indices = leading(article_obj)
+    else:
+        raise Exception("unknown algorithm method type")
 
     summary = get_summary(article_obj, summary_indices)
 
@@ -82,6 +103,6 @@ if __name__ == '__main__':
         sys.exit(1)
 
     method = sys.argv[1]
-    docpath = sys.argv[2]
+    docpaths = sys.argv[2:]
 
-    main(docpath)
+    main(method, docpaths)
