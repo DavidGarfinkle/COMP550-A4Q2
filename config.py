@@ -1,6 +1,9 @@
-ARTICLES_DIR = "./articles"
+import os
+
+ARTICLES_DIR = "./docs"
 MIN_ARTICLE_CHARACTER_LENGTH = 3000
-MIN_ARTICLE_HITS = 4
+MIN_ARTICLE_HITS = 3
+MAX_CLUSTER_SIZE = 4
 
 TOPIC_KEYWORDS = {
     'ukraine': 'ukraine russia',
@@ -8,3 +11,5 @@ TOPIC_KEYWORDS = {
     'trump': 'trump mueller',
     'tesla': 'elon bankrupt model 3'}
 
+def DOC_PATH(clusterNum, articleNum):
+    return os.path.join(ARTICLES_DIR, "doc{}-{}.txt".format(clusterNum, articleNum))

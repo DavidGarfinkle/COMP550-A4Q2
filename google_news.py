@@ -17,17 +17,11 @@ def get_cluster(topic, query):
     # We are only interested in the articles
     gn_items = cluster['articles']
 
-    try:
-        gn_items = process_cluster(gn_items)
-    except Exception:
-        print("Failed to process topic {}".format(topic))
+    gn_items = process_cluster(gn_items)
 
     return gn_items
 
 def process_cluster(gn_items):
-
-    # Take the first ten hits
-    gn_items = gn_items[:MIN_ARTICLE_HITS]
 
     # For each item, attach article content to ['content'] attribute 
     for item in gn_items:
@@ -37,7 +31,10 @@ def process_cluster(gn_items):
     gn_items = filter_cluster(gn_items)
 
     if (len(gn_items) < MIN_ARTICLE_HITS):
-        raise Exception("Not enough article hits")
+        raise Exception("Not enough article hits for this topic search")
+
+    # Take the first n articles
+    gn_items = gn_items[:MAX_CLUSTER_SIZE]
 
     return gn_items
 
@@ -49,8 +46,9 @@ def attach_article_content(gn_item, dctkey):
         article.download()
         article.parse()
         gn_item[dctkey] = article.text
-    except Exception:
+    except Exception as e:
         print("   Article.py failed to download or parse article")
+        print(e)
         gn_item[dctkey] = ""
 
 def filter_cluster(cluster):
@@ -63,16 +61,23 @@ def filter_cluster(cluster):
     return list(filter(filter_all, cluster))
 
 def main():
-    for topic, phrase in TOPIC_KEYWORDS.items():
+
+    if not os.path.exists(ARTICLES_DIR):
+        os.mkdir(ARTICLES_DIR)
+
+    for topic_index, (topic, phrase) in enumerate(TOPIC_KEYWORDS.items(), start=1):
         print("getting articles for (topic, phrase_query): ({}, {})".format(topic, phrase))
         gn_items = get_cluster(topic, phrase)
         if not gn_items:
             continue
 
-        output_path = os.path.join(ARTICLES_DIR, "{}.json".format(topic))
-        print("writing {} articles to {}".format(len(gn_items), output_path))
-        with open(output_path, 'w') as f:
-            f.write(json.dumps(gn_items))
+        for article_index, gn_item in enumerate(gn_items, start=1):
+            print("writing article to {}".format(DOC_PATH(topic_index, article_index)))
+
+            with open(DOC_PATH(topic_index, article_index), 'w') as f:
+                f.write(gn_item['content'])
+
+        print("topic {}: saved {} articles".format(topic, len(gn_items)))
 
 
 if __name__ == '__main__':
