@@ -73,17 +73,18 @@ def sumbasic(article_obj, stepone, steptwo, stepthree, stepfour):
 
 def main(method, docpath):
 
+    print(docpath)
     if '*' in docpath:
-        docbase = os.path.basename(docpath)
-        docpaths = [d for d in os.listdir(ARTICLES_DIR) if d.split('-')[0] == docbase]
+        docbase = os.path.basename(docpath).split('-')[0]
+        docpaths = [os.path.join(ARTICLES_DIR, d) for d in os.listdir(ARTICLES_DIR) if (d.split('-')[0] == docbase) and d[-3:] == 'txt']
     else:
         docpaths = [docpath]
 
     article = ""
     for docpath in docpaths:
+        print("Reading doc " + docpath)
         with open(docpath, 'r') as f:
-            article = f.read()
-        article += article
+            article += f.read()
 
     article_obj = preprocess_article(article)
 
