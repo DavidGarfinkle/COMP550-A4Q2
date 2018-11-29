@@ -1,0 +1,92 @@
+5 Years Of Incorrect Claims & Forecasts About Tesla From TSLA Bear Mark Spiegel
+
+November 4th, 2018 by Zachary Shahan
+
+There have been a handful of particularly loud Tesla bears or critics over the past several years. One of those people, Andrew Left of Citron Research, recently made a U-turn in his position on Tesla (citing 4 CleanTechnica charts of Tesla sales along the way).
+
+Another one is Jim Chanos, who we’ll probably address again before long, and another is Mark Spiegel. Like Chanos, Spiegel gets put on major TV shows rather frequently for his “expertise” on Tesla and is routinely quoted in major financial news outlets. But if you look at Spiegel’s historical record on Tesla, it’s really bad — really, really bad.
+
+Someone on Twitter recently spent a good bit of time digging up numerous highlights of this record and sent them out in a tweetstorm, tagging @CleanTechnica in the process. It was brilliant, so I’m using his hard work and creating a normal article out of it (I know — so old school). Of course, I’m also throwing in my own flavor and some extra context.
+
+1. Spiegel, short Tesla [TSLA], published three articles on Seeking Alpha in the second week of July 2013 explaining his short thesis. To kick off the series, he claimed that Porsche, BMW, Audi, and Mercedes-Benz plug-in vehicles would outcompete the Tesla Model S.
+
+Not only has that not happened, but the Model S has come to dominate its overall large luxury car class.
+
+In the US, the Model 3 is also now embarrassing small and midsize luxury car competitors, and Tesla on the whole is selling more cars (all models) than BMW, Mercedes-Benz, Lexus, Audi, and every other luxury automaker.
+
+Globally, Tesla is outselling Porsche and Jaguar.
+
+So much for the first part of Spiegel’s 2013 thesis!
+
+2. Spiegel’s second article in July 2013 claimed that the Model 3 would cost $59,500 to make.
+
+Elon Musk has indicated that the cost is approaching ~$28,000. (This conclusion is based on a handful responses on Twitter and on conference calls this year confirming independent findings about the cost to produce the Model 3 at certain production rates).
+
+3. Remember, Spiegel was bearish not only on Tesla the company but also Tesla the stock in 2013. The stock price has risen dramatically since then, which means Spiegel has had a long series of incorrect stock price forecasts. In his third July 2013 article on Seeking Alpha, Spiegel claimed that the best-case scenario for Tesla’s stock price 5 years from then (which meant in 2018) was $98. The price was $129 at the time.
+
+We’re now in late 2018 and the stock price is $346.41.
+
+4. Spiegel also made the public assumption on Twitter in July 2013 that Tesla Model S sales had maxed out in Q2 2013. Its sales were 5,150 that quarter.
+
+Tesla Model S sales in Q3 2018 were 14,470.
+
+Note: the chart above is for all Tesla sales, not only Model S sales.
+
+5. Spiegel published six Seeking Alpha articles in 2014. In February, he claimed that the Honda Accord Plug-In Hybrid and Audi A7 clean diesel would outcompete the Tesla Model S.
+
+That claim is so embarrassingly wrong that I won’t even share a chart here — just imagine Model S sales soaring and Honda Accord PHEV and Audi A7 clean diesel sales looking like specs of dust on the floor of the chart.
+
+6. He also compared Superchargers to Betamax, claimed CHAdeMO was easily upgradable to 120kW, and CCS would start at 90kW and go to 200kW. Thus, Tesla would be screwed with a slow, uncompetitive, expensive charging infrastructure.
+
+It is late 2018 and only Tesla has a notable superfast charging network, and it’s gigantic. It is a top selling point for Tesla, which is currently the only automaker that offers vehicles you can conveniently take on road trips.
+
+7. Also in February 2014, Spiegel claimed that the Model 3 (“Model E” back then) would cost $47,007 to manufacture.
+
+Aside from my note in point #2 above, the tweeter who inspired this story adeptly pointed out that Spiegel’s February 2014 claim was “20% and $12,500 less than he calculated 6 months ago!” Apparently, he got much more realistic within 6 months, but was still putting the price far too high.
+
+8. In July 2014, Spiegel claimed the $5,300 per car warranty reserve Tesla had set aside would be 50–100% less than needed.
+
+Nope, not true at all.
+
+9. In September 2014, Spiegel claimed Tesla sales couldn’t grow as quickly as bulls hoped by 2020. His overall summary statement: “Conclusion: even if Tesla were able to grow as quickly as Microsoft did in its prime (an absurd scenario for a non-monopolistic, non-software company) it would produce only 186,000 cars in 2020.”
+
+Tesla produced more than 80,000 vehicles in the 3rd quarter of 2018. If you multiply that figure by four, you’re at more than 320,000 cars a year. In two months, we’ll find out what the full-year 2018 total ends up being, but suffice it to say that Spiegel’s claims about absurd Tesla production growth were absurdly pessimistic.
+
+10. In November 2014, Spiegel yet again claimed that Model S demand had peaked. It had reached 5,500 deliveries in Q3 2014, already proving wrong his earlier claim that 5,150 Q2 2013 deliveries was a max peak (something he didn’t care to mention in 2014).
+
+Current quarterly demand for the Model S is around 15,000 cars per quarter.
+
+11. In April 2015, Spiegel got more dramatic. He said, “Tesla on its current path may be bankrupt by 2020. There’s a way Tesla could avoid this fate, but I think Elon Musk’s ego is too big to permit it.” Here’s where it gets really fun:
+
+“So what’s the only way for Tesla to remain in business for the long haul, and — unlike today — become nicely profitable (albeit, with a much smaller market cap)? It could go exclusively ‘up-up-market’ (abandoning the Gigafactory and ‘Resale Guarantee Program’) and settle for drastically reduced volume. The P85D and upcoming PX85D are unique cars that offer 0-60 acceleration that only a handful of buyers care about (with the low 5s offered by the ’70’ more than adequate for the vast majority), but if there were no ‘non-performance’ Model S or X available, I believe that a reasonable number of wealthy current ‘regular’ model buyers would pay up for the ‘performance’ version just to own such a unique electric car.”
+
+That’s right, Spiegel’s sage advice was to drop the idea of the Model 3 altogether and even drop the lower end, lower priced versions of the Model S and Model X. It should just sell the most expensive versions of the Model S and Model X.
+
+Darn, if only Tesla had taken Spiegel’s advice! If only Tesla had dropped the Gigafactory, the Model 3, and almost everything else. How much better off it would be today!
+
+12. In his April 2016 investor letter for Stanphyl Capital, Spiegel wrote, “I increased our short position in what I believe to be the market’s biggest single-company stock bubble, Tesla April close: $240.76.”
+
+Two and a half years later, Tesla’s stock price is $346.41.
+
+13. Skipping over several other ridiculously incorrect claims and jumping to November 2016, we find that Spiegel claimed the manufacturing cost of the Model 3 would be $65,000 (give or take $10,000) — an estimate notably higher than those 2013 and 2014 estimates mentioned above. Naturally, he concluded that the Model 3 wouldn’t sell and Tesla’s stock price would plummet.
+
+To reiterate, Elon Musk has confirmed a cost of around $28,000 for the Model 3 at a targeted production rate and has clearly made 100,000+ Model 3s for well under $55,000–75,000 per car, on average.
+
+Also, the stock price has not plummeted but rather has risen substantially from November 2016 (when it was under $200) to today ($346.41).
+
+14. In May 2017, Spiegel for some reason thought 2018 Model S and Model X sales would be 85,000 at the most.
+
+2017 Model S and Model X sales were around 100,000 and are expected to be approximately the same in 2018. They were at ~75,000 after the first three quarters of the year.
+
+With this kind of record, major media outlets really should stop bringing Mark Spiegel on to comment on Tesla unless they want to go ahead and start the segment with this background. One Twitter user made the point well by tagging Yahoo, CNBC, Bloomberg, and CNN and noting that they should use the above information as background for their next interview with Spiegel. One can dream.
+
+Again, a huge thanks to Twitter user Never2Late for doing most of the legwork for this piece.
+
+Full disclosure: As noted in my short bio below, I’m long TSLA — for what I think are obvious reasons.
+
+
+
+
+
+
+

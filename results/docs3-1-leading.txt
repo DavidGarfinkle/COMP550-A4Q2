@@ -1,0 +1,5 @@
+docs/doc3-1.txt
+Reading doc docs/doc3-1.txt
+According to Tesla CEO Elon Musk, the automaker was teetering on the edge of disaster earlier this year.. “Tesla faced a really severe threat of death due to the Model 3 production ramp,” Musk told Axios during a video interview on HBO.. “Essentially the company was bleeding money like crazy and just if we didn’t solve these problems in a very short period of time, we would die.. And it was extremely difficult to solve them.”
+
+Musk said Tesla was within “single-digit weeks” of an unrecoverable catastrophe.. While we appreciate his present candor, the assertion doesn’t mesh with comments made earlier.
