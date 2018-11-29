@@ -93,7 +93,7 @@ def main(method, docpath):
     elif method == "best-avg":
         summary_indices = sumbasic(article_obj, stepone, steptwo, stepthree_bestavg, stepfour)
     elif method == "simplified":
-        summary_indices = sumbasic(article_obj, stepone, steptwo, stepthree, stepfour)
+        summary_indices = sumbasic(article_obj, stepone, steptwo, stepthree, stepfour_simplified)
     elif method == "leading":
         summary_indices = leading(article_obj)
     else:
