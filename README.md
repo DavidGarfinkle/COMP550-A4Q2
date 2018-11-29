@@ -5,6 +5,10 @@ pip install -r requirements.txt
 
 python sumbasic.py <method_name> "<file_n>*"
 
+Or, to run all algorithms on all of the input documents in docs/,
+
+./generate-results.sh
+
 For example,
 python ./sumbasic.py simplified "./docs/doc1-*.txt" > simplified-1.txt
 should run the simplified version of the summarizer on the first cluster, writing the output to a text file
